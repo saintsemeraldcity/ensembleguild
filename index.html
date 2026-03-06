@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensemble Guild | Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4efed; /* Rose Tint from your slides */
+            color: #2d2a29; /* Dark Charcoal */
+        }
+
+        .letter-spacing-widest {
+            letter-spacing: 0.3em;
+        }
+
+        .fade-in {
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .line-draw {
+            width: 0;
+            animation: lineDraw 1.5s forwards ease-in-out;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes lineDraw {
+            to { width: 4rem; }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-8 text-center select-none">
+
+    <div class="fade-in flex flex-col items-center">
+        <!-- Minimalist Logo Mark -->
+        <div class="mb-16">
+            <svg width="50" height="50" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="100" height="10" fill="#2d2a29"/>
+                <rect y="45" width="100" height="10" fill="#2d2a29"/>
+                <rect y="90" width="100" height="10" fill="#2d2a29"/>
+            </svg>
+        </div>
+
+        <h1 class="text-2xl md:text-3xl font-extralight uppercase letter-spacing-widest mb-6">
+            Ensemble Guild
+        </h1>
+        
+        <div class="h-[1px] bg-[#2d2a29] opacity-20 line-draw mb-12"></div>
+
+        <p class="text-[10px] md:text-xs letter-spacing-widest uppercase opacity-40 font-light max-w-xs leading-loose">
+            Establishing the Professional Foundation for Mississippi’s Creative Economy.
+        </p>
+
+        <div class="mt-24">
+            <p class="text-[11px] font-semibold uppercase letter-spacing-widest italic opacity-80">
+                Coming Soon
+            </p>
+        </div>
+    </div>
+
+    <!-- Absolute Positioning for Footer info -->
+    <footer class="absolute bottom-12 w-full text-center fade-in">
+        <div class="flex flex-col items-center space-y-4">
+            <a href="https://instagram.com/ensembleguild" target="_blank" class="text-[9px] uppercase letter-spacing-widest opacity-40 hover:opacity-100 transition-opacity">
+                @ensembleguild
+            </a>
+            <p class="text-[8px] uppercase letter-spacing-widest opacity-30">
+                A Mississippi Non-Profit Corporation • 501(c)(3) Status Pending
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
